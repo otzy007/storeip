@@ -2,7 +2,7 @@ require 'sinatra'
 require 'sinatra/activerecord'
 # require './config/enviorments'
 
-set :database, 'sqlite3:///foo.db'
+# set :database, 'sqlite3:///foo.db'
 
 class IpAddress < ActiveRecord::Base
    validates_uniqueness_of :ip

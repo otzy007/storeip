@@ -2,6 +2,9 @@ language: ruby
 rvm:
   - 1.9.3
   - ruby-head
+  - rbx-19mode
+  - jruby-head
+  - jruby-19mode
 gemfile: Gemfile
 script:
   - rake db:migrate

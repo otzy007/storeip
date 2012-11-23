@@ -5,6 +5,7 @@ gem 'sinatra-activerecord'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'rake'
 end
 
 group :production do

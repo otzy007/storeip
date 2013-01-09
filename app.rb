@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'sinatra/activerecord'
 
-set :database, 'sqlite3:///foo.db' unless ENV['DATABASE_URL']
+set :database, 'sqlite3:///db/database.db' unless ENV['DATABASE_URL']
 
 class IpAddress < ActiveRecord::Base
    validates_uniqueness_of :ip
